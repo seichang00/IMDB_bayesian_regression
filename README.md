@@ -8,7 +8,7 @@ Applying Bayesian Regression to IMDB 50K Dataset (https://www.kaggle.com/dataset
 There are only two classes (positive, negative) used for sentiment analysis of the 50K IMDB dataset. Hence, we aim to apply Bayesian logistic regression to perform MAP inference and predict the sentiment scores from the test data. 
 
 ### Feature representation of reviews
-To perform Bayesian logistic regression, we must first decide on the features to be used to represent each review. Each review consists of a body of text
+To perform Bayesian logistic regression, we must first decide on the features to be used to represent each review. Each review consists of a body of text that we can extract features from (ex. count of negative words).
 
 ### Training through SGD
 Then we will perform a linear transformation on these features using an initial set of weights. We will then apply the logistic function (sigmoid) which should map the values of the transformation as probabilities from 0 to 1. Based on the probability generated, we can assign a sentiment value and calculate the loss based on the true label.
